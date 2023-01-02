@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com" name="github"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://git.openembedded.org/" name="openembedded"/>
+  <remote fetch="https://gitlab.com" name="gitlab"/>
+
+  <project name="woodyzhang666/yocto-platform-config" path="conf" remote="github" revision="3de9e3a1a20c0021f17b7dd306f08f9d58463f57">
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+  <project name="bitbake" path="bitbake" remote="openembedded" revision="refs/tags/2.2"/>
+  <project name="openembedded-core" path="layers/openembedded-core" remote="openembedded" revision="6cf675a1c4d6ab691f2e79355c842b41711a676b"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="openembedded" revision="d04444509a220fcb61496d7e64f3ba09c647543b"/>
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="913bd8ba4dd1d5d2a38261bde985b64a36e36281"/>
+  <project name="woodyzhang666/meta-woodylab" path="layers/meta-woodylab" remote="github" revision="b4d017e2bded36fe05d6ae328fa5dfd80064e8da"/>
+</manifest>
